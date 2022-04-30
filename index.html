@@ -13,21 +13,28 @@
     <title>Front End Test</title>
 </head>
 
-<body>
-    <div id="container">
+<body id="body" class="light-mode">
+    <div id="container" class="container-black">
         <header class="headerInfo">
-            <div class="headerImg">
-                <img src="./assets/img/profile_pic.png" alt="profile picture" />
+            <div class="rightSide">
+                <div class="headerImg">
+                    <img src="./assets/img/profile_pic.png" alt="profile picture" />
+                </div>
+                <div class="headerName">
+                    <p class="headerName">Erik Dunlop</p>
+                    <p class="headerPlace">San Francisco, California</p>
+                </div>
             </div>
-            <div class="headerName">
-                <p class="headerName">Erik Dunlop</p>
-                <p class="headerPlace">San Francisco, California</p>
+            <div class="leftSid">
+                <div class="mode">
+                    <img id="dark-mode" src="./assets/icons/sleep-mode.png" />
+                </div>
             </div>
         </header>
         <section id="slide">
             <div class="swiper">
                 <div id="swiper-images" class="swiper-wrapper">
-                    
+
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
@@ -36,21 +43,22 @@
         </section>
         <div id="icons">
             <img id="icon-heart" class="iconHeart" src="./assets/icons/heart.png" />
-            <img class="iconChat" src="./assets/icons/chat.png" alt="comment" />
-            <img class="iconSend" src="./assets/icons/send.png" alt="send" />
+            <img id="icon-chat" class="iconChat" src="./assets/icons/chat.png" alt="comment" />
+            <img id="icon-send" class="iconSend" src="./assets/icons/send.png" alt="send" />
         </div>
         <section id="interection">
-            
+
             <section id="userDescription">
                 <div class="userInfo">
                     <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                         been the industry's standard dummy text ever since the 1500s</p>
                 </div>
                 <div class="comments">
-                    <b>Comment</b> <p>It has survived not only five centuries, but also the leap into electronic</p>
+                    <b>Comment</b>
+                    <p>It has survived not only five centuries, but also the leap into electronic</p>
                 </div>
             </section>
-    
+
             <div id="addComment">
                 <div class="containerAddComment">
                     <textarea id="AddCommentBox" name="text" placeholder="Add a comment" wrap="soft"></textarea>

@@ -11,10 +11,15 @@ body {
     align-items: center;
 }
 
+#container .container-black{
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+}
+
 #container {
     max-width: 527px;
     height: 739px;
-    background: #FCFCFC;
+    background-color: #FCFCFC;
     border: solid 1px #DEDEDE;
     border-radius: 5px;
     margin-top: 50px;
@@ -23,9 +28,21 @@ body {
     flex-direction: column;
 }
 
+
+
 header {
     display: flex;
+}
+
+
+.headerInfo{
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.rightSide {
+    display: flex;
 }
 
 header .headerImg {
@@ -37,6 +54,23 @@ header .headerImg img {
     height: 50px;
     border-radius: 50%;
 }
+
+.leftSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .mode {
+    cursor: pointer;
+}
+
+header .mode img{
+    width: 15px;
+    height: 15px;
+    margin: 30px 20px 0 20px;
+}
+
 
 p.headerName {
     font-size: 14px;
@@ -113,7 +147,8 @@ p.headerPlace {
 
 
 #icons .iconChat {
-    width: 26px;
+    width: 22px;
+    height: 22px;
 }
 
 #icons .iconSend {
