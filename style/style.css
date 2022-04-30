@@ -12,7 +12,7 @@ body {
 }
 
 #container {
-    width: 527px;
+    max-width: 527px;
     height: 739px;
     background: #FCFCFC;
     border: solid 1px #DEDEDE;
@@ -200,4 +200,19 @@ p.headerPlace {
     font-weight: 700;
     color: #3D8AFF;
     margin-left: 20px;
+}
+
+
+@media (max-width: 425px) {
+    #container {
+        width: 400px;
+    }
+
+    .containerAddComment{
+        width: 350px;
+    }
+
+    .comments {
+        margin-top: 15px;
+    }
 }
