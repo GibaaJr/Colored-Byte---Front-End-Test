@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>Front End Test</title>
+</head>
+
+<body>
+    <div id="container">
+        <header class="headerInfo">
+            <div class="headerImg">
+                <img src="./assets/img/profile_pic.png" alt="profile picture" />
+            </div>
+            <div class="headerName">
+                <p class="headerName">Erik Dunlop</p>
+                <p class="headerPlace">San Francisco, California</p>
+            </div>
+        </header>
+        <section id="slide">
+            <div class="swiper">
+                <div id="swiper-images" class="swiper-wrapper">
+                    
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <div id="icons">
+            <img id="icon-heart" class="iconHeart" src="./assets/icons/heart.png" />
+            <img class="iconChat" src="./assets/icons/chat.png" alt="comment" />
+            <img class="iconSend" src="./assets/icons/send.png" alt="send" />
+        </div>
+        <section id="interection">
+            
+            <section id="userDescription">
+                <div class="userInfo">
+                    <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+                <div class="comments">
+                    <b>Comment</b> <p>It has survived not only five centuries, but also the leap into electronic</p>
+                </div>
+            </section>
+    
+            <div id="addComment">
+                <div class="containerAddComment">
+                    <textarea id="AddCommentBox" name="text" placeholder="Add a comment" wrap="soft"></textarea>
+                    <button id="postBtn">Post</button>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./scrips/scripts.js"></script>
+    <script src="./scrips/swiper.js"></script>
+    <script src="./scrips/api.js"></script>
+</body>
+
+</html>

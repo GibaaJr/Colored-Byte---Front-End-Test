@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 527px;
+    height: 739px;
+    background: #FCFCFC;
+    border: solid 1px #DEDEDE;
+    border-radius: 5px;
+    margin-top: 50px;
+    box-shadow: -1px 7px 8px -5px rgba(0, 0, 0, 0.14);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+header .headerImg {
+    margin: 15px 0 10px 20px;
+}
+
+header .headerImg img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+p.headerName {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 25px;
+    margin-top: 21px;
+    line-height: 17px;
+    font-style: normal;
+
+}
+
+p.headerPlace {
+    font-size: 10px;
+    font-weight: 500;
+    margin-left: 25px;
+    margin-top: 9px;
+}
+
+#icons {
+    margin-left: 25px;
+    display: flex;
+}
+
+#icons img {
+    margin-top: 17px;
+    margin-right: 12px;
+}
+
+#icons .iconHeart {
+    width: 24px;
+}
+
+#icons .iconHeart:hover {
+    cursor: pointer;
+}
+
+#icons .iconHeartColored {
+    width: 24px;
+    animation: 2s like-heart-animation ease-in forwards;
+}
+
+#icons .iconHeartColored:hover {
+    cursor: pointer;
+}
+
+@keyframes like-heart-animation {
+
+    0%,
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    15% {
+        opacity: 0.9;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    30% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+    }
+
+    45%,
+    80% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+}
+
+
+#icons .iconChat {
+    width: 26px;
+}
+
+#icons .iconSend {
+    width: 22px;
+}
+
+#interection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#userDescription {
+    margin-top: 25px;
+    padding: 0px 25px 0px 25px;
+    font-size: 12px;
+}
+
+.userInfo {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#userDescription p {
+    font-weight: 400;
+}
+
+#userDescription b {
+    font-weight: 600;
+}
+
+.comments {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.comments p {
+    margin-left: 60px;
+    margin-top: 5px;
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.comments b {
+    margin-top: 5px;
+}
+
+#addComment {
+    display: flex;
+    margin: 0px 20px 10px 25px;
+}
+
+.containerAddComment {
+    background: #F1F1F1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+}
+
+#addComment textarea {
+    border: none;
+    color: #000000;
+    background-color: transparent;
+    width: 400px;
+    resize: none;
+    overflow: hidden;
+    height: 32px;
+    line-height: 32px;
+}
+
+#addComment textarea:focus {
+    outline: none;
+
+}
+
+.containerAddComment button {
+    all: unset;
+    cursor: pointer;
+    font-weight: 700;
+    color: #3D8AFF;
+    margin-left: 20px;
+}
